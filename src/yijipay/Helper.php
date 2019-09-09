@@ -16,8 +16,6 @@ class Helper
 
     protected $error;
 
-    public $Status;
-
     //代付
     public function yiPay($data)
     {
@@ -150,5 +148,17 @@ class Helper
     public function getError()
     {
         return $this->error;
+    }
+
+    //银行
+    public function getBankAccount($key)
+    {
+        $list = json_decode('{"ABC":"农业银行","BKSH":"上海银行","BOBJ":"北京银行","BOC":"中国银行","BOCD":"成都银行","BOGZ":"贵州银行","BTCB":"包商银行","CBHB":"渤海银行","CCB":"建设银行","CEB":"光大银行","CGB":"广发银行","CIB":"兴业银行","CITIC":"中信银行","CMB":"招商银行","CMBC":"民生银行","COMM":"交通银行","CQCB":"重庆银行","CQRCB":"重庆农商行","CQTGB":"重庆三峡银行","CSRCB":"常熟农商行","EBCL":"恒丰银行","FJNX":"福建农信","GYCB":"贵阳银行","GZCB":"广州银行","GZRCB":"广州农商行","HBCB":"哈尔滨银行","HSB":"徽商银行","HUBNX":"湖北农信社","HXB":"华夏银行","HZCB":"杭州银行","ICBC":"工商银行","JSRCU":"江苏农信社","KMNL":"昆明农联","MYCB":"绵阳商行","NJCB":"南京银行","PINGANBK":"平安银行","PSBC":"邮政储蓄银行","QZCB":"泉州银行","SDNX":"山东农信","SJZHRCB":"汇融农村合作银行","SPDB":"浦发银行","SXNX":"山西农信社","SZBK":"苏州银行","TZBK":"台州银行","WHCB":"汉口银行","YBYZB":"渝北银座村镇银行","ZHESHANGB":"浙商银行","ZJRCB":"浙江农信","ZZBK":"郑州银行"}',true);
+        return $list[$key];
+    }
+
+    public function getConfig()
+    {
+        return $this->yiConfig;
     }
 }
