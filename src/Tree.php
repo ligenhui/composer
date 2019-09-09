@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Package;
+namespace ligenhui\package;
 
 
 class Tree
