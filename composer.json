@@ -1,0 +1,14 @@
+{
+    "name": "ligenhui/package",
+    "description": "composer package",
+    "type": "Library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Package\\": "src/Package",
+            "Package\\Tree\\": "src/Package/Tree"
+        }
+    }
+}
