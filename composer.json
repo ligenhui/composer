@@ -4,11 +4,12 @@
     "type": "Library",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=5.4"
+    },
     "autoload": {
         "psr-4": {
-            "Package\\": "src/Package",
-            "Package\\Tree\\": "src/Package/Tree"
+            "Ligenhui\\Package": "src/"
         }
     }
 }
