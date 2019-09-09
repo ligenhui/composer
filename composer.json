@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ligenhui\\Package": "src/"
+            "Ligenhui\\Package\\": "src/"
         }
     }
 }
